@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signupimg"
+    tools:context=".RegistrationActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/my_Primary"
+        android:alpha="0.4"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_above="@+id/registrationcard"
+            android:padding="28dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/foodicon"/>
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TiffinBox"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="32dp"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+   <androidx.cardview.widget.CardView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             app:cardCornerRadius="28dp"
+             android:layout_marginBottom="-20dp"
+             android:id="@+id/registrationcard">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="28dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textColor="@color/my_Primary"
+            android:textSize="32sp"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please Enter Your Information"
+            android:alpha="0.7"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email Address"
+            android:textStyle="bold"
+            android:alpha="0.7"/>
+        
+        <EditText
+            android:id="@+id/u_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:drawableEnd="@drawable/mailicon"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textStyle="bold"
+            android:alpha="0.7"/>
+
+        <EditText
+            android:id="@+id/u_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:drawableEnd="@drawable/passwordicon"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile Number"
+            android:textStyle="bold"
+            android:alpha="0.7"/>
+
+        <EditText
+            android:id="@+id/u_pass_conf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:drawableEnd="@drawable/mobilelogo"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textStyle="bold"
+            android:alpha="0.7"/>
+
+        <EditText
+            android:id="@+id/u_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:drawableEnd="@drawable/addressicon"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/signUpBtn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textColor="@color/white"
+            android:alpha="0.8"
+            app:cornerRadius="30dp"/>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"/>
+
+    </LinearLayout>
+
+   </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
